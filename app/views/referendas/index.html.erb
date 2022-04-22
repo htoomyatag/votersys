@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Referendas</h1>
+
+<div id="referendas">
+  <% @referendas.each do |referenda| %>
+    <%= render referenda %>
+    <p>
+      <%= link_to "Show this referenda", referenda %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New referenda", new_referenda_path %>
